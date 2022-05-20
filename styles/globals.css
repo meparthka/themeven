@@ -57,6 +57,9 @@ a {
 .home-header{
   background: var(--background-gradient);
   min-height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .navbar-con .navbar-link a{
@@ -75,11 +78,49 @@ a:focus{
   outline: solid 3px rgba(99, 185, 255, 0.555);
 }
 
+.title-x{
+  font-size: 65px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.des-x{
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.con{
+  margin: var(--margin-con);
+}
+
+.des-x-link{
+  padding: 0px 3px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
 @media screen and (max-width: 700px) {
+  
   :root{
     --margin-con: 0 20px;
   }
+
   .home-header{
-    min-height: 500px;
+    min-height: 450px;
   }
+  
+  .title-x{
+    font-size: 40px;
+  }
+
+  .des-x{
+    font-size: 20px;
+  }
+
+  .navbar-con .navbar-link a{
+    margin-left:  8px;
+  }
+
 }
