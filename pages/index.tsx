@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Link from 'next/link';
 import Header from '../components/header';
 import HomeHeader from '../components/homeheader';
+import Featured from '../components/featured';
 
 const Home: NextPage = () => {
   return (
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
           <Link href="/about">Continue Reading</Link>
         </div>
       </div>
+      <Featured />
       <h1>Hello, World!</h1>
       <h1>Hello, World!</h1>
       <h1>Hello, World!</h1>

@@ -123,13 +123,21 @@ a:focus {
 }
 
 .featured-tag {
-  display: flex;
   background: var(--background-2);
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 400;
   width: fit-content;
   padding: 5px 15px;
+  color: var(--text-color-alpha);
+  border-radius: 8px;
+}
+
+.read-mode a{
+  font-size: 1.1rem;
+  font-weight: 400;
+  width: fit-content;
+  padding: 3px 6px;
   color: var(--text-color-alpha);
   border-radius: 8px;
 }
@@ -184,6 +192,19 @@ p {
   text-shadow: rgba(255, 255, 255, 0.5) 0px 0px 20px;
 }
 
+.d-flex{
+  display: flex;
+}
+
+
+.d-flex *{
+  margin: auto 0;
+}
+
+.space-b{
+  justify-content: space-between;
+}
+
 @media screen and (max-width: 700px) {
 
   :root {
@@ -218,6 +239,19 @@ p {
     padding: 3px 9px;
     color: var(--text-color-alpha);
     border-radius: 8px;
+    font-size: .9rem;
+  }
+
+  .read-mode a {
+    padding: 3px 3px;
+    color: var(--text-color-alpha);
+    border-radius: 8px;
+    font-size: .9rem;
+  }
+
+  .letest-post {
+    margin-top: 100px;
+    margin-bottom: 70px;
   }
 
   .letest-post * {
