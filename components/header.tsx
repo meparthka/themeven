@@ -5,7 +5,7 @@ const Header: NextPage = () => {
 
   if (typeof window !== "undefined") {
     let d = document.getElementsByClassName("navalt");
-  
+
     for (let i = 0; i < d.length; i++) {
       window.onscroll = (e) => {
         if (window.scrollY > 0) {
@@ -23,10 +23,13 @@ const Header: NextPage = () => {
       <div className="navbar navalt">
         <div className="navbar-con">
           <div className="navbar-logo">
-            Parthka!
+            <Link href="/">
+              Parthka!
+            </Link>
           </div>
           <div className="navbar-link">
             <Link className="btn" href="/">Home</Link>
+            <Link className="btn" href="/about">Blog</Link>
             <Link className="btn" href="/about">About</Link>
           </div>
         </div>
