@@ -1,9 +1,20 @@
+:root{
+  --text-color: #fff;
+  --background: rgb(10, 17, 34);
+  --background-2: rgb(19, 26, 44);
+  --background-gradient: linear-gradient(0deg, var(--background-2) 0%, var(--background) 100%);
+  --background-blur: rgba(10, 17, 34, 0.884);
+  --margin-con: 0 200px;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: var(--background);
+  color: var(--text-color);
 }
 
 a {
@@ -12,5 +23,63 @@ a {
 }
 
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
+}
+
+.navbar{
+  backdrop-filter: blur(8px);
+  padding: 16px 0;
+  position: sticky;
+  transition: .2s;
+  top: 0;
+}
+
+.navbar-alt-effect{
+  background-color: var(--background-blur);
+}
+
+.navbar-con{
+  margin: var(--margin-con);
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-con .navbar-logo{
+  font-size: 2rem;
+}
+
+.navbar-con .navbar-link{
+  margin: auto 0;
+}
+
+.home-header{
+  background: var(--background-gradient);
+  min-height: 550px;
+}
+
+.navbar-con .navbar-link a{
+  padding: 3px 6px;
+  font-size: 1.2rem;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+
+a{
+  outline: solid 0px rgba(0, 0, 0, 0);
+  transition: all .1s ease-in-out;;
+}
+
+a:focus{
+  outline: solid 3px rgba(99, 185, 255, 0.555);
+}
+
+@media screen and (max-width: 700px) {
+  :root{
+    --margin-con: 0 20px;
+  }
+  .home-header{
+    min-height: 500px;
+  }
 }
