@@ -15,6 +15,19 @@ const Featured: NextPage = () => {
                         </Link>
                     </div>
                 </div>
+
+                <div className="featured-row">
+                    <Link href="123">
+                        How To Build an Advanced Multipart Component with Chakra UI
+                    </Link>
+                    <Link href="123we">
+                        Introducing the Theme UI Plugin for Figma
+                    </Link>
+                    <Link href="123">
+                        Setting up a yarn Workspace with TypeScript, ESLint & Cypress
+                    </Link>
+                </div>
+
             </div>
         </>
     )
