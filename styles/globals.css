@@ -1,8 +1,10 @@
 :root {
   --text-color: #fff;
   --text-color-alpha: rgba(255, 255, 255, 0.644);
-  --background: rgb(10, 17, 34);
+  --background: #0a1122;
+  --btn-text-color: rgb(10, 17, 34);
   --background-2: rgb(19, 26, 44);
+  --background-3: rgb(23, 32, 53);
   --background-gradient: linear-gradient(0deg, var(--background-2) 0%, var(--background) 100%);
   --background-blur: rgba(10, 17, 34, 0.884);
   --margin-con: 0 200px;
@@ -104,7 +106,7 @@ a:focus {
   font-size: 1.6rem;
   font-weight: 300;
   margin-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .des-l {
@@ -123,7 +125,7 @@ a:focus {
 }
 
 .featured-tag {
-  background: var(--background-2);
+  background: var(--background-3);
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 400;
@@ -168,19 +170,20 @@ p {
 
 .btn a {
   outline: solid 0px rgba(0, 0, 0, 0);
-  transition: all .1s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 .btn a:focus {
   outline: solid 3px var(--border-color);
+  transition: all .1s ease-in-out;
 }
 
 .btn-success a {
-  background: #EA580C;
+  background: #e63946;
 }
 
 .btn-success a:hover {
-  background: #c04a0a;
+  background: #c7323e;
 }
 
 .navbar-logo:hover{
