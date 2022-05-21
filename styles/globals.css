@@ -33,6 +33,7 @@ a {
 }
 
 .navbar {
+  z-index: 100000;
   backdrop-filter: blur(8px);
   padding: 16px 0;
   position: sticky;
@@ -330,6 +331,10 @@ p {
   .featured-row>a {
     min-height: 150px !important;
     width: 100% !important;
+    font-size: 1.2rem;
+  }
+
+  .des-l-alt{
     font-size: 1.2rem;
   }
 }

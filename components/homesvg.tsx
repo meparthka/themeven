@@ -1,11 +1,11 @@
 import { NextPage } from "next";
 
 const HomeSvg: NextPage = () => {
-	return (
-		<>
-		
-		</>
-	)
+  return (
+    <>
+
+    </>
+  )
 }
 
 export default HomeSvg;
