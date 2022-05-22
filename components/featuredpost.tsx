@@ -5,7 +5,12 @@ const FeaturedPost: NextPage = () => {
   return (
     <>
 
+
       <div className="con letest-post">
+        <div className="upline"></div>
+        <div className="title-x-alt">
+          Post
+        </div>
         <div className="featured-tag">
           Latest Post
         </div>
