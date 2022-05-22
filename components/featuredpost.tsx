@@ -4,10 +4,7 @@ import Link from "next/link";
 const FeaturedPost: NextPage = () => {
   return (
     <>
-
-
       <div className="con letest-post">
-        <div className="upline"></div>
         <div className="title-x-alt">
           Post
         </div>

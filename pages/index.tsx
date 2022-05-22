@@ -3,6 +3,8 @@ import Link from 'next/link';
 import Header from '../components/header';
 import HomeHeader from '../components/homeheader';
 import FeaturedPost from '../components/featuredpost';
+import TechPost from '../components/technologypost';
+import Projects from '../components/projects';
 
 const Home: NextPage = () => {
   return (
@@ -10,57 +12,8 @@ const Home: NextPage = () => {
       <Header />
       <HomeHeader />
       <FeaturedPost />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <TechPost />
+      <Projects />
     </>
   )
 }

@@ -110,6 +110,13 @@ a:focus {
   text-shadow: rgb(255 255 255 / 15%) 0px 0px 35px;
 }
 
+.title-m {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.3;
+  text-shadow: rgb(255 255 255 / 15%) 0px 0px 35px;
+}
+
 .des-x {
   font-size: 1.6rem;
   font-weight: 300;
@@ -120,6 +127,12 @@ a:focus {
 .des-l {
   font-size: 1.2rem;
   font-weight: 300;
+}
+
+.des-m {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: var(--text-color);
 }
 
 .des-l-alt {
@@ -242,11 +255,11 @@ p {
   text-shadow: 0 1px 1px rgb(0 0 0 / 50%)
 }
 
-.featured-row>a:hover{
+.featured-row>a:hover {
   transform: translateY(-8px);
 }
 
-.featured-row>a:focus{
+.featured-row>a:focus {
   outline: solid 3px var(--border-color);
   transition: all .1s ease-in-out;
 }
@@ -263,12 +276,68 @@ p {
   background: linear-gradient(to top right, #933890, #E08896, #CC98DD, #D1CEE2);
 }
 
-.upline{
+.upline {
   width: 75px;
   height: 6px;
   background: #933890;
   margin: 0 4px;
   border-radius: 4px;
+}
+
+.tech>* {
+  margin: 20px 0;
+}
+
+.tech {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.tech-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tech-row>* {
+  width: 30%;
+}
+
+.tech-row>*>* {
+  margin: 10px 0;
+}
+
+.project {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.project>* {
+  margin: 20px 0;
+}
+
+.project-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project-row>* {
+  background: var(--background-2);
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.project-row>*:hover {
+  transform: translateY(-8px);
+}
+
+.project-row>*:nth-child(1) {
+  width: 62%;
+}
+
+.project-row>*:nth-child(2) {
+  width: 35%;
 }
 
 @media screen and (max-width: 800px) {
@@ -330,10 +399,11 @@ p {
     margin-bottom: 70px;
   }
 
-  /* .letest-post * {
-    margin: 15px 0;
+  .tech {
+    margin-top: 60px;
+    margin-bottom: 70px;
   }
- */
+
   .letest-post .btn {
     margin: 25px 0;
   }
@@ -349,17 +419,30 @@ p {
     font-size: 1.2rem;
   }
 
-  .des-l-alt{
+  .des-l-alt {
     font-size: 1.2rem;
   }
 
   .title-x-alt {
     font-size: 40px;
   }
+
+  .tech-row>* {
+    width: 100% !important;
+  }
 }
 
 @media screen and (max-width: 1200px) {
   :root {
     --margin-con: 0 20px;
+  }
+
+  .tech-row>* {
+    width: 40%;
+  }
+
+  .project-row>* {
+    width: 100% !important;
+    margin-bottom: 15px;
   }
 }
